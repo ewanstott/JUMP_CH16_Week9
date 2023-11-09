@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .burger > .line {
+        background-color: black;
+        height: 3px;
+        width: 18px;
+        margin-bottom: 3px;
+      }
+
+      .pop-out-menu {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translateY(-200vh);
+        transition: all 1s ease-in-out;
+        width: 100vh;
+        height: 100vh;
+        background-color: aliceblue;
+      }
+
+      .burger:hover .pop-out-menu {
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="pop-out-menu">
+          <div class="item">Home</div>
+          <div class="item">About</div>
+          <div class="item">Contact</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
